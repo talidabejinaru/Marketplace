@@ -1,0 +1,19 @@
+Bejinaru Talida Manuela, 333CB
+
+Proiectul este format din 3 module: Marketplace, Producer si Consumer. Nu am folosit metode de sincronizare, întrucât operațiile pe liste si dicționare sunt thread-safe.
+
+Structuri de date folosite
+-pentru producatori si produse am utilizat un dicționar
+-pentru coșurile de cumpărături si produsele din ele am uitlizat un dicționar
+-pentru a ține minte id-ul producătorului un dicționar
+
+Nu am ales să folosesc metodele pentru sincronizare deoarece operațiile pe liste si dicționare sunt thread-safe, astfel nu a fost nevoie să-mi fac griji de probleme precum data-race.
+
+Nu am implementat partea de Unittesting si de Logging.
+
+Consider că soluția mea este foarte eficienta deoarece nu conține elemente de sincronizare astfel, fiind totul executat rapid. 
+
+Această temă a fost foarte utilă pentru mine deoarece m-a ajutat să înteleg cum anume se face sincronizarea intre threaduri, de ce este nevoie de această sincronizare și cum poate fi ea evitată acolo unde este cazul.
+
+Resurse utilizate
+https://ocw.cs.pub.ro/courses/asc/laboratoare/02
